@@ -45,11 +45,11 @@ int partition(int a[],int l,int u)
         do
             i++;
 
-        while(a[i]<v&&i<=u);
+        while(a[i]>v&&i<=u);
 
         do
             j--;
-        while(v<a[j]);
+        while(v>a[j]);
 
         if(i<j)
         {
